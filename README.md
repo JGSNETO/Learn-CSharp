@@ -15,3 +15,122 @@
 8. Exception Handling:
 9. Generic Programming:
 10. Easy-to-learn syntax:
+
+```
+//Namespace
+using System;
+//Class definition: C# programs are organized into classes. The 'program' class is commonly sed as the entry point for the program. 
+class{
+    //class members
+}
+//Main Method: The 'main' method is the entry point of a c# program. it is where the program execution begin
+static void Main(){
+
+}
+//Statements and Expressions: Perform actions, such as calling methods or assigning values.
+Console.WriteLine("Hello, World");
+```
+
+### Static functions
+- Defined with the 'static' keyword
+- Belong to the class itself rather than individual instances of the class
+- Can be called directly using the class name without creating an instance of the class
+- Often used for utility methods or operations that don't require access to instance specific data
+
+### Data types 
+
+1. Numeric types:
+- int
+- float
+- double
+- decimal
+
+2. Boolean type
+- bool
+
+3. Character type
+- char
+
+4. String type
+- string
+
+5. Enumerations
+- enum
+
+6. Arrays
+
+- int[], folat[] ..
+
+### Operations and Expressions
+
+1. Arithmetic Operators:
+- +
+- -
+- *
+- /
+- %
+- =
+- +=, -=, *=, /=, %=
+- ==
+- !=
+- >,<, >=, <=
+- &&
+- ||
+- !
+- ++
+- --
+- ?
+- &: and
+- |: or
+- ^: Bitwise XOR
+- >>: Right shift
+- <<: Left shift
+- +: Concatenates two strings together
+- .: Accesses members
+- (): Call methods
+
+### Control structures in C#
+
+1. If statement:
+```
+if (condition){
+    //
+}
+else if (condition){
+    //
+}
+else {
+    //
+}
+```
+2. Switch statement:
+```
+switch(expression){
+    case value1:
+    //
+    case value2:
+    //
+    default:
+    //
+        break;
+}
+```
+3. Loops:
+```
+for(initialization, condition, iteration){
+    //
+}
+
+while(condition){
+    //
+}
+
+do{
+
+}while(condition);
+
+foreach(var item in collection){
+
+}
+
+```
