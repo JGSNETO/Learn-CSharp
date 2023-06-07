@@ -134,3 +134,64 @@ foreach(var item in collection){
 }
 
 ```
+### Access modifier 
+
+- Access modifiers in C# are keywords used to control the visibility and accessibility of types(classes, structs, enums), members(fields, properties, methods, events), and other elements within a program. There are several access modifiers available in C#, including:
+
+1. Public: The most permessive access modifier. Public members are accessible from any code within the same assembly or from other assmblies that reference it.
+
+```
+public class MyClass{
+    public int MyPublicField;
+    public void MyPublicMethod(){}
+}
+```
+
+2. Private: The most restrictive access modifier. Private members are accessible only within the same class or struct. They are not accessible from derived classes or other code outised the class.
+
+```
+public class MyClass{
+    private int myPrivateField;
+    private void MyPrivateMethod() {}
+}
+
+```
+
+3. Protected: Protected members are accessible within the same class or struct and from derived classes. They are not accessible from other code outside the class hierarchy.
+
+```
+public class MyBaseClass{
+    protected int myProtectedField;
+    protected void MyProtectedMethod(){}
+}
+
+public class MyDerivedClass : MyBaseClass{
+    public void AccessProtectedMember() {
+        myProtectedField = 10;
+        MyProtectedMethod();
+    }
+}
+
+```
+
+4. Internal: Internal members are acceessible within the same assembly but not from other assemblies. This is the default access modifier if none is specified. 
+
+```
+internal class MyInternalClass{
+    internal int MyInternalField;
+    internal void MyInternalMethod(){}
+}
+
+```
+
+5. Protected internal: A combination of the protected and internal access modifiers. Protected internal members are accessible within the same assembly and from derived classes, regardless of whether they are in the same assembly or a different assembly.
+
+```
+public class MyBaseClass {
+    protected internal int myProtectedInternalField;
+    protected internal void MyProtectedInternalMethod(){}
+}
+
+```
+
+- These access modifiers provide flexibility in controlling the accessibility of types and members within your C# program, allowing you to design classes and define their visibility as needed for encapsulation and code organization. 
